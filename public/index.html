@@ -45,46 +45,7 @@
     <!-- recipes -->
     <div class="recipes container grey-text text-darken-1">
         <h6 class="center">Ninja Recipies</h6>
-        <div class="card-panel recipe white row">
-            <img src="/img/dish.png" alt="recipe thumb">
-            <div class="recipe-details">
-                <div class="recipe-title">Edame Noodles</div>
-                <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-            </div>
-            <div class="recipe-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
-        <div class="card-panel recipe white row">
-            <img src="/img/dish.png" alt="recipe thumb">
-            <div class="recipe-details">
-                <div class="recipe-title">French Fries</div>
-                <div class="recipe-ingredients">Potato, Salt, Sunflower oil</div>
-            </div>
-            <div class="recipe-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
-        <div class="card-panel recipe white row">
-            <img src="/img/dish.png" alt="recipe thumb">
-            <div class="recipe-details">
-                <div class="recipe-title">Masala Oats</div>
-                <div class="recipe-ingredients">Oats, Flavoured Masala, Oil</div>
-            </div>
-            <div class="recipe-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
-        <div class="card-panel recipe white row">
-            <img src="/img/dish.png" alt="recipe thumb">
-            <div class="recipe-details">
-                <div class="recipe-title">Maggie</div>
-                <div class="recipe-ingredients">Water, Led, 2 min :p</div>
-            </div>
-            <div class="recipe-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
+        
     </div>
 
     <div class="center">
@@ -112,7 +73,32 @@
         </form>
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAZNN01XL14b6ijtKjgpXzPAExE4Df7WcY",
+            authDomain: "food-ninja-pwa-52a3a.firebaseapp.com",
+            databaseURL: "https://food-ninja-pwa-52a3a.firebaseio.com",
+            projectId: "food-ninja-pwa-52a3a",
+            storageBucket: "food-ninja-pwa-52a3a.appspot.com",
+            messagingSenderId: "208850245072",
+            appId: "1:208850245072:web:a493d459238e2be3df95d5",
+            measurementId: "G-QWMWWVKFG2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        firebase.analytics();
+    </script>
+
     <script src="/js/app.js"></script>
+    <script src="/js/db.js"></script>
     <script src="/js/ui.js"></script>
 
 </body>
